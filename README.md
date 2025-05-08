@@ -1,11 +1,11 @@
 # asbestos
 Esse programa lerá uma pequena imagem e tentará substituir seus pixeis por caracteres, dando como resultado um texto que simula a original.
-<br>
-Para funcionar, nomeie a imagem que deseje transformar como "a", seu formato deve ser PNG.
+<br><br>
+Para usar, coloque a imagem que deseja transformar no mesmo diretório que "asbestos.exe". Dentro do programa, digite o nome da imagem com sua extensão. Nota: a imagem precisa usar apenas 3 canais.
 <br><br><br><br><br><br><patapim> 
 
-
-
+Usei o seguinte header: https://github.com/nothings/stb/blob/master/stb_image.h
+<br>
 Esse projeto foi iniciado porque eu vi esse texto online, já seu nome foi uma recomendação amigavel de um amigo amigavel (uma amizade minha):
 
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀

@@ -52,14 +52,15 @@ void process(std::string name, int type){
             std::string ftNome = name.erase(name.size()-4);
             ftNome += ".txt";
             std::ofstream fw(ftNome);
+            if (!fw){
+                std::cerr << ("nao deu de achar o out.txt eu tentei mas nao consegui acho que voce deve ter feito algo nao muito legal que deve ter afetado minhas capacidades de achar esse tal de arquivo ae obrigado desde entao.");
+            }
             fw << finalP;
             fw.close();
 
             std::cout << "Confira '"<< ftNome <<"' para ver resultado.\n"<< endl;
             finalP = "";
-            if (!fw){
-                std::cerr << ("nao deu de achar o out.txt eu tentei mas nao consegui acho que voce deve ter feito algo nao muito legal que deve ter afetado minhas capacidades de achar esse tal de arquivo ae obrigado desde entao.");
-            }
+
 
             stbi_image_free(foto);
         }

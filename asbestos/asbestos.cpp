@@ -15,6 +15,8 @@ void process(std::string name, int type){
         if (channels == 3){
             std::string line;
             std::string finalP;
+            static const std::array<int,12> values = {234, 213, 192, 171, 150, 129, 108, 87, 66 ,45 ,24, -900};
+            static const std::array<string, 12> c =  {"$","%","W","#","Z","v","[","1","?","!",":",","};
             for (int k = 0; k < height; k++){
                 for(int j = 0; j < width; j++){
                     int i = (k * width + j) * channels;
@@ -34,9 +36,6 @@ void process(std::string name, int type){
 
                     //Caracteres por brilho: $@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,"^`'.
                     
-                    static const std::array<int,12> values = {234, 213, 192, 171, 150, 129, 108, 87, 66 ,45 ,24, -900};
-                    static const std::array<string, 12> c =  {"$","%","W","#","Z","v","[","1","?","!",":",","};
-
                     for(int i = 0; i < 12; i++){
                         if (brightness > values[i]){
                             line += c[i];
